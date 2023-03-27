@@ -1,9 +1,11 @@
 'use client';
 
+import Title from '@/components/Title';
+
 export default function Dashboard() {
   return (
     <>
-      <h1>Mapa aqui</h1>
+      <Title title="pag" />
     </>
   );
 }

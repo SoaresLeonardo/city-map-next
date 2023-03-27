@@ -1,11 +1,5 @@
 import Header from '@/components/Header/Header';
 import Navbar from '@/components/Navbar/Nav-link';
-import { Roboto } from 'next/font/google';
-
-const roboto = Roboto({
-  weight: '700',
-  subsets: ['latin']
-});
 
 export const metadata = {
   title: 'Create Next App',
