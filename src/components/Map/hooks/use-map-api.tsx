@@ -1,3 +1,4 @@
+import { IMarkPosition } from '@/app/types/map-marker-position';
 import { useJsApiLoader, GoogleMap } from '@react-google-maps/api';
 
 export default function UseMap() {
@@ -7,7 +8,7 @@ export default function UseMap() {
   });
 
   // application fixed city(Luiziânia) position;
-  const fixedMarkerPosition = {
+  const fixedMarkerPosition: IMarkPosition = {
     lat: -21.6736,
     lng: -50.3238
   };
