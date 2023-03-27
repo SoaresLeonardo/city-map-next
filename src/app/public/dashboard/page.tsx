@@ -3,7 +3,7 @@
 export default function Dashboard() {
   return (
     <>
-      <h1>Opa</h1>
+      <h1>Mapa aqui</h1>
     </>
   );
 }
