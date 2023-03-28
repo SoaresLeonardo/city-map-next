@@ -1,11 +1,11 @@
 'use client';
 
-import Title from '@/components/Title';
+import Map from '@/components/Map/map-painel';
 
 export default function Dashboard() {
   return (
     <>
-      <Title title="pag" />
+      <Map />
     </>
   );
 }
