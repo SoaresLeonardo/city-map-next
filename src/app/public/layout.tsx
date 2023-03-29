@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar/Nav-link';
+import Header from '@/components/Header/header';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +12,7 @@ export default function DashLayout({
 }) {
   return (
     <div>
-      <Navbar />
+      <Header />
       {children}
     </div>
   );

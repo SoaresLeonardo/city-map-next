@@ -7,3 +7,10 @@
 body {
   background-color: #f3f4f6;
 }
+
+button {
+  background-color: inherit;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
