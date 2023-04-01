@@ -4,13 +4,16 @@ import { useState } from 'react';
 import Map from '@/components/Map/map-painel';
 import styles from '../../../styles/Dashboard.module.css';
 import { GoReport } from 'react-icons/go';
+import Modal from '@/components/Modal/modal';
 
 export default function Dashboard() {
   // the state where it will be defined which component will be displayed
   const [showContent, setShowContent] = useState('showMap');
+  const [openModal, setopenModal] = useState(false);
 
   return (
     <div className={styles.dashboard_container}>
+      <Modal isOpen={openModal} />
       <div className={styles.dashboard_buttons_contents}>
         <button
           className={
@@ -37,7 +40,7 @@ export default function Dashboard() {
         {showContent === 'showMap' && (
           <div className={styles.dashboard_map_result}>
             <div className={styles.dashboard_map_button}>
-              <GoReport />
+              <GoReport onClick={() => setopenModal(true)} />
             </div>
             <div className={styles.map}>
               <Map />
