@@ -1,55 +1,55 @@
 'use client';
 
-import Map from '@/components/Map/map-painel';
 import { useState } from 'react';
+import Map from '@/components/Map/map-painel';
 import styles from '../../../styles/Dashboard.module.css';
 
 export default function Dashboard() {
-  //the state where it will be defined which component will be displayed
+  // the state where it will be defined which component will be displayed
   const [showContent, setShowContent] = useState('showMap');
-
-  const handleClick = (btnName: string) => {
-    setShowContent(btnName);
-  };
 
   return (
     <div className={styles.dashboard_container}>
-      <div className={styles.dashboard_links_container}>
+      <div className={styles.dashboard_buttons_contents}>
         <button
           className={
             showContent === 'showMap'
               ? styles.dashboard_button_item_active
               : styles.dashboard_button_item
           }
-          onClick={() => handleClick('showMap')}
+          onClick={() => setShowContent('showMap')}
         >
-          Mapa
+          Meu mapa
         </button>
         <button
           className={
-            showContent === 'showReportList'
+            showContent === 'showReports'
               ? styles.dashboard_button_item_active
               : styles.dashboard_button_item
           }
-          onClick={() => handleClick('showReportList')}
+          onClick={() => setShowContent('showReports')}
         >
           Chamados
         </button>
       </div>
       <div className={styles.dashboard_result_container}>
         {showContent === 'showMap' && (
-          <div className="dashboard_map_result">
-            <div>
+          <div className={styles.dashboard_map_result}>
+            <div className={styles.map}>
               <Map />
+            </div>
+            <div className={styles.map_menu}>
+              {/* <div>
+                <RiZzzFill size={60} />
+              </div> */}
+              <div className={styles.map_menu_introduction}>
+                <h1>Mapa de luiziânia</h1>
+                <span>Rua: Sen Luiz Piza</span>
+              </div>
             </div>
           </div>
         )}
       </div>
     </div>
   );
-}
-{
-  /* <div style={{ height: '100%' }}>
-<Map />
-</div> */
 }
