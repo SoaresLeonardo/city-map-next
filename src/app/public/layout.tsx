@@ -11,7 +11,7 @@ export default function DashLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div style={{ backgroundColor: '#f8fafb' }}>
+    <div>
       <Header />
       {children}
     </div>

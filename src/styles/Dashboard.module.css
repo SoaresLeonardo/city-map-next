@@ -1,6 +1,6 @@
 .dashboard_container {
   margin: 50px auto;
-  width: 95%;
+  width: 80%;
   max-width: 1300px;
 }
 
@@ -11,6 +11,8 @@
   padding: 12px;
   width: 200px;
   text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   cursor: pointer;
   box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.486);
 }
@@ -22,6 +24,8 @@
   width: 200px;
   text-align: center;
   cursor: pointer;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   font-size: 1.1rem;
   box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.486);
 }
@@ -30,106 +34,28 @@
 .dashboard_result_container {
   background-color: white;
   padding: 20px;
-  height: 90vh;
+  height: 100vh;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.24);
 }
 
 /* map-section */
 .dashboard_map_result {
   width: 100%;
-  height: 100%;
-  display: flex;
+  height: 95%;
 }
 
 .map {
-  width: 80%;
-  height: 100%;
-}
-
-.map,
-.map_menu {
-  display: inline-block;
-}
-
-.map_menu {
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  width: 50%;
-  flex-direction: column;
-}
-
-.map_menu_introduction {
-}
-.map_menu_introduction h1 {
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.map_menu_introduction h1,
-.map_menu_introduction span {
-  padding-bottom: 50px;
-}
-/*
-.dashboard_links_container {
-  display: flex;
-}
-
-.dashboard_button_item {
-  background-color: #f9fafc60;
-  margin-right: 10px;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 1.2rem;
-  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.75);
-}
-
-.dashboard_button_item_active {
-  background-color: #ffffff;
-  margin-right: 10px;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 1.2rem;
-  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.75);
-}
-
-.dashboard_button_item:nth-child(2) {
-  margin-right: 0;
-}
-
-.dashboard_result_container {
-  background-color: white;
-  box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.349);
-  height: 90vh;
-}
-
-.dashboard_map_result {
   width: 100%;
   height: 100%;
-  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.map {
-  width: 80%;
-  height: 80%;
-  padding: 20px;
+.dashboard_map_button {
+  float: right;
+  font-size: 1.5rem;
+  padding: 5px;
 }
-
-.map,
-.map_menu {
-  display: inline-block;
-}
-
-.map_menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  width: 50%;
-  flex-direction: column;
-} */
