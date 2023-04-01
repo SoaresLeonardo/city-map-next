@@ -3,7 +3,7 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { MdDashboard } from 'react-icons/md';
+import { FaMapMarkedAlt } from 'react-icons/fa';
 import { FaUserCircle } from 'react-icons/fa';
 
 const user = {
@@ -28,7 +28,7 @@ export default function Header() {
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0 text-indigo-600">
-                      <MdDashboard size={40} />
+                      <FaMapMarkedAlt size={40} />
                     </div>
                   </div>
                   <div className="hidden md:block">
